@@ -1,0 +1,236 @@
+{
+  "operators": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "MacTavish",
+      "rank": "Captain",
+      "team": "Charlie",
+      "branch": "Army"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "surname": "Price",
+      "rank": "Captain",
+      "team": "Bravo",
+      "branch": "Army"
+    },
+    {
+      "id": 3,
+      "name": "Scott",
+      "surname": "MacMillan",
+      "rank": "Major",
+      "team": "Command",
+      "branch": "Air Force"
+    },
+    {
+      "id": 4,
+      "name": "Shepherd",
+      "surname": "",
+      "rank": "General",
+      "team": "Command",
+      "branch": "Army"
+    },
+    {
+      "id": 5,
+      "name": "Jack",
+      "surname": "Reacher",
+      "rank": "Major",
+      "team": "Military Police",
+      "branch": "Army"
+    },
+    {
+      "id": 6,
+      "name": "Frances",
+      "surname": "Neagly",
+      "rank": "Sergeant",
+      "team": "Military Police",
+      "branch": "Army"
+    },
+    {
+      "id": 7,
+      "name": "Joseph",
+      "surname": "Allen",
+      "rank": "Private",
+      "team": "Whisky",
+      "branch": "Navy"
+    },
+    {
+      "id": 8,
+      "name": "Joseph",
+      "surname": "Bowman",
+      "rank": "Warrant Officer II",
+      "team": "Whisky",
+      "branch": "Navy"
+    },
+    {
+      "id": 9,
+      "name": "Marcus",
+      "surname": "Burns",
+      "rank": "Sergeant",
+      "team": "Bravo",
+      "branch": "Army"
+    },
+    {
+      "id": 10,
+      "name": "Simon",
+      "surname": "Riley",
+      "rank": "Lieutenant",
+      "team": "Bravo",
+      "branch": "Army"
+    },
+    {
+      "id": 11,
+      "name": "Glenn",
+      "surname": "Morshower",
+      "rank": "Lieutenant General",
+      "team": "Command",
+      "branch": "Navy"
+    },
+    {
+      "id": 12,
+      "name": "Jason",
+      "surname": "Hudson",
+      "rank": "Special Agent",
+      "team": "Whisky",
+      "branch": "CIA"
+    },
+    {
+      "id": 13,
+      "name": "Paul",
+      "surname": "Jackson",
+      "rank": "Sergeant",
+      "team": "Whisky",
+      "branch": "Navy"
+    },
+    {
+      "id": 14,
+      "name": "Alex",
+      "surname": "Johnson",
+      "rank": "Sergeant",
+      "team": "Thunder",
+      "branch": "Air Force"
+    },
+    {
+      "id": 15,
+      "name": "Keating",
+      "surname": "Zach",
+      "rank": "Lieutenant",
+      "team": "Thunder",
+      "branch": "Air Force"
+    },
+    {
+      "id": 16,
+      "name": "Alex",
+      "surname": "Mason",
+      "rank": "Lieutenant Commander",
+      "team": "Whisky",
+      "branch": "Navy"
+    },
+    {
+      "id": 17,
+      "name": "David",
+      "surname": "Mason",
+      "rank": "Lieutenant Commander",
+      "team": "Whisky",
+      "branch": "Navy"
+    },
+    {
+      "id": 18,
+      "name": "James",
+      "surname": "Ramirez",
+      "rank": "Private",
+      "team": "Thunder",
+      "branch": "Air Force"
+    },
+    {
+      "id": 19,
+      "name": "Karl",
+      "surname": "Mash",
+      "rank": "Captain",
+      "team": "Command",
+      "branch": "Army"
+    },
+    {
+      "id": 20,
+      "name": "Hafsa",
+      "surname": "Nawal",
+      "rank": "Corporal",
+      "team": "Charlie",
+      "branch": "CIA"
+    },
+    {
+      "id": 21,
+      "name": "Gary",
+      "surname": "Sanderson",
+      "rank": "Sergeant",
+      "team": "Bravo",
+      "branch": "Army"
+    },
+    {
+      "id": 22,
+      "name": "David",
+      "surname": "Walker",
+      "rank": "Lieutenant",
+      "team": "Bravo",
+      "branch": "Navy"
+    },
+    {
+      "id": 23,
+      "name": "Logan",
+      "surname": "Walker",
+      "rank": "Sergeant",
+      "team": "Charlie",
+      "branch": "Navy"
+    },
+    {
+      "id": 24,
+      "name": "Derek",
+      "surname": "Westbrook",
+      "rank": "Sergeant",
+      "team": "Bravo",
+      "branch": "Army"
+    },
+    {
+      "id": 25,
+      "name": "Frank",
+      "surname": "Woods",
+      "rank": "Sergeant",
+      "team": "Whisky",
+      "branch": "Navy"
+    },
+    {
+      "id": 26,
+      "name": "John",
+      "surname": "Kozak",
+      "rank": "Sergeant",
+      "team": "Echo",
+      "branch": "Army"
+    },
+    {
+      "id": 27,
+      "name": "Cedric",
+      "surname": "Ferguson",
+      "rank": "Captain",
+      "team": "Echo",
+      "branch": "Army"
+    },
+    {
+      "id": 28,
+      "name": "Robert",
+      "surname": "Bonifacio",
+      "rank": "Sergeant",
+      "team": "Echo",
+      "branch": "Army"
+    },
+    {
+      "id": 29,
+      "name": "James Grant",
+      "surname": "Ellison",
+      "rank": "Sergeant",
+      "team": "Echo",
+      "branch": "Army"
+    }
+  ]
+}
