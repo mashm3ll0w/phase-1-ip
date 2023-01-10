@@ -29,6 +29,33 @@
       </ul>
     </div>
 
+    <div class="card-container">
+      <div class="card" style="width: 25rem;">
+        <h5 class="card-title">OPERATOR DETAILS</h5>
+        <img src="./assets/army.png" class="card-img-top branch-image" alt="Branch Name goes here">
+        
+        <div class="card-body">
+          <h5 class="card-title">Name: <span id="operator-name">Operator Name</span></h5>
+          <h5 class="card-title">Rank: <span id="operator-rank">Operator Rank</span></h5>
+          <h5 class="card-title">Team: <span id="operator-team">Operator Team</span></h5>
+          
+          <div class="edit-form">
+            <div class="rank-form">
+              <input class="form-control" type="text" name="rank" placeholder="New Rank">
+              <a href="#" class="btn btn-primary">Update Rank</a>
+            </div>
+            <div class="team-form">
+              <input class="form-control" type="text" name="team" placeholder="New Team">
+              <a href="#" class="btn btn-primary">Update Team</a>
+            </div>
+          </div>
+
+        </div>
+        <button id="delete-btn" class="btn btn-danger">Delete Operator</button>
+      </div>
+    </div>
+  </div>
+
 </body>
 <script type="text/javascript" src="./src/index.js"></script>
 </html>
