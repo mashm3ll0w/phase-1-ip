@@ -1,0 +1,13 @@
+body {
+  font-family:'Montserrat', 'Lato', sans-serif;
+}
+
+.navbar-brand img {
+  scale: 1.75;
+  margin: 0 20px 10px;
+}
+
+#header-text {
+  font-size: 30px;
+  font-weight: bold;
+}
