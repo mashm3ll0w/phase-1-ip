@@ -11,3 +11,28 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
+
+
+#main-content {
+  margin: 100px 0 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#operators-list {
+  padding-left: 3px;
+  font-size: 1.5rem;
+}
+
+#operators-list > li:hover {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  scale: 1.05;
+}
