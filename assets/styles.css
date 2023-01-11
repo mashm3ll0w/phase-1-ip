@@ -56,6 +56,10 @@ ul {
   justify-content: space-evenly;
 }
 
+.card-image {
+  align-self: center;
+}
+
 .card-image > img {
   height: 300px;
 }
@@ -72,4 +76,14 @@ ul {
 .rank-form, .team-form{
   display: flex;
   gap: 10px;
+}
+
+.header-label > h5 {
+  width: 60px;
+}
+
+.header-label {
+  display: flex;
+  gap: 25px;
+  margin: 5px 0;
 }
