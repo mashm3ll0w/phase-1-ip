@@ -36,3 +36,40 @@ ul {
   color: white;
   scale: 1.05;
 }
+
+.card {
+  width: 50rem;
+  padding: 20px 0;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
+
+.card-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-image > img {
+  height: 300px;
+}
+
+.body-and-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  padding-left: 0;
+}
+
+.rank-form, .team-form{
+  display: flex;
+  gap: 10px;
+}
