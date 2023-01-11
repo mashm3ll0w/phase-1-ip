@@ -9,7 +9,7 @@
 		<title>SOCOM</title>
 	</head>
 	<body>
-    <!-- navbar -->
+		<!-- navbar -->
 		<header id="header">
 			<nav class="navbar navbar-dark bg-primary fixed-top">
 				<div class="container-fluid">
@@ -18,10 +18,9 @@
 			</nav>
 		</header>
 
-    <!-- main content -->
+		<!-- main content -->
 		<main id="main-content" class="container-fluid">
-
-      <!-- operators list -->
+			<!-- operators list -->
 			<div class="operators-container">
 				<h1>Operators</h1>
 				<hr />
@@ -33,8 +32,8 @@
 					<li>Operator 3</li>
 				</ul>
 			</div>
-      
-      <!-- main operator display -->
+
+			<!-- main operator display -->
 			<div class="card-container">
 				<div class="card">
 					<h5 class="card-title">OPERATOR DETAILS</h5>
@@ -43,37 +42,58 @@
 						<div class="card-image">
 							<img src="./assets/army.png" class="card-img-top branch-image" alt="Branch Name goes here" />
 						</div>
-            
-            <!-- operator details -->
+
+						<!-- operator details -->
 						<div class="body-and-form">
 							<div class="card-body">
 								<div class="header-label">
 									<h5>Name:</h5>
-									<h4 id="operator-name">Operator Name</h4>
+									<h4 id="operator-name">Operator's Name</h4>
 								</div>
 								<div class="header-label">
 									<h5>Rank:</h5>
-									<h4 id="operator-name">Operator Name</h4>
+									<h4 id="operator-name">Operator's Rank</h4>
 								</div>
 								<div class="header-label">
 									<h5>Team:</h5>
-									<h4 id="operator-name">Operator Name</h4>
+									<h4 id="operator-name">Operator's Team</h4>
 								</div>
 								<hr />
 							</div>
 
-                <!-- update rank and team forms -->
+							<!-- update rank and team forms -->
 							<div class="edit-form">
 								<div class="rank-form">
 									<div class="input-group mb-3">
-										<input type="text" class="form-control" placeholder="New Rank" aria-label="New Rank" aria-describedby="rankButton" />
+										<select id="rankInput" class="form-select">
+											<option hidden selected disabled value="">New rank...</option>
+											<option>General</option>
+											<option>Lieutenant General</option>
+											<option>Major</option>
+											<option>Captain</option>
+											<option>Lieutenant Commander</option>
+											<option>Lieutenant</option>
+											<option>Warrant Officer II</option>
+											<option>Sergeant</option>
+											<option>Corporal</option>
+											<option>Private</option>
+											<option>Special Agent</option>
+										</select>
 										<button class="btn btn-outline-primary" type="button" id="rankButton">Update Rank</button>
 									</div>
 								</div>
 
 								<div class="team-form">
 									<div class="input-group mb-3">
-										<input type="text" class="form-control" placeholder="New Team" aria-label="New Team" aria-describedby="teamButton" />
+										<select id="teamInput" class="form-select">
+											<option hidden selected disabled>New team...</option>
+											<option>Bravo</option>
+											<option>Charlie</option>
+											<option>Echo</option>
+											<option>Command</option>
+											<option>Whisky</option>
+											<option>Military Police</option>
+										</select>
 										<button class="btn btn-outline-primary" type="button" id="teamButton">Update Team</button>
 									</div>
 								</div>
@@ -85,7 +105,7 @@
 				</div>
 			</div>
 
-      <!-- operator teams -->
+			<!-- operator teams -->
 			<div class="teams-container">
 				<div class="team">
 					<h1>Bravo Team</h1>
@@ -109,8 +129,7 @@
 			</div>
 		</main>
 
-
-    <!-- new operator modal -->
+		<!-- new operator modal -->
 		<div class="modal fade" id="new-operator" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
@@ -181,13 +200,13 @@
 									<button type="submit" class="btn btn-primary">Submit</button>
 								</div>
 							</div>
-						</form> 
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
 
-    <!-- footer -->
+		<!-- footer -->
 		<footer class="text-center text-white fixed-bottom bg-primary">
 			<div class="text-center p-3">
 				<h2>Who Dares Wins</h2>
