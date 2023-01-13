@@ -87,3 +87,7 @@ ul {
   gap: 25px;
   margin: 5px 0;
 }
+
+#operator-name, #operator-rank, #operator-team {
+  font-weight: bold;
+}

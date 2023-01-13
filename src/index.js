@@ -8,7 +8,7 @@ function fetchOperators(){
   fetch(`${localDBURL}`)
   .then(res => res.json())
   .then(data => {
-    displayOperator.call(data[12])
+    displayOperator.call(data[0])
   })
 }
 
