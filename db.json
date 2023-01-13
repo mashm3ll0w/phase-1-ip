@@ -22,7 +22,7 @@
       "surname": "MacMillan",
       "rank": "Major",
       "team": "Command",
-      "branch": "Air Force"
+      "branch": "Air_Force"
     },
     {
       "id": 4,
@@ -110,7 +110,7 @@
       "surname": "Johnson",
       "rank": "Sergeant",
       "team": "Thunder",
-      "branch": "Air Force"
+      "branch": "Air_Force"
     },
     {
       "id": 15,
@@ -118,7 +118,7 @@
       "surname": "Zach",
       "rank": "Lieutenant",
       "team": "Thunder",
-      "branch": "Air Force"
+      "branch": "Air_Force"
     },
     {
       "id": 16,
@@ -142,7 +142,7 @@
       "surname": "Ramirez",
       "rank": "Private",
       "team": "Thunder",
-      "branch": "Air Force"
+      "branch": "Air_Force"
     },
     {
       "id": 19,
