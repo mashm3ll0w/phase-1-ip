@@ -13,6 +13,14 @@ function fetchOperators(){
   })
 }
 
+function fetchOperator(id){
+  fetch(`${localDBURL}/${id}`)
+  .then(res => res.json())
+  .then(operator => {
+    displayOperator.call(operator)
+  })
+}
+
 function displayOperator(){
   document.querySelector(".branch-image").alt = this.branch
   document.querySelector(".branch-image").src = `./assets/${this.branch.toLowerCase()}.png`
@@ -24,10 +32,11 @@ function displayOperator(){
 function listOperators(operators){
   document.getElementById("operators-list").replaceChildren()
   const operatorsContainer = document.getElementById("operators-list")
-  operators.map(operator => {
+  operators.forEach(operator => {
     const li = document.createElement("li")
     li.dataset.id = operator.id
     li.textContent = `${operator.surname} ${operator.name}`
+    li.addEventListener("click", () => fetchOperator(operator.id))
     operatorsContainer.appendChild(li)
   })
 }
