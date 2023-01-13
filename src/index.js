@@ -9,6 +9,7 @@ function fetchOperators(){
   .then(res => res.json())
   .then(data => {
     displayOperator.call(data[0])
+    listOperators(data)
   })
 }
 
@@ -18,4 +19,15 @@ function displayOperator(){
   document.getElementById("operator-name").textContent = `${this.surname}, ${this.name}`
   document.getElementById("operator-rank").textContent = this.rank
   document.getElementById("operator-team").textContent = this.team
+}
+
+function listOperators(operators){
+  document.getElementById("operators-list").replaceChildren()
+  const operatorsContainer = document.getElementById("operators-list")
+  operators.map(operator => {
+    const li = document.createElement("li")
+    li.dataset.id = operator.id
+    li.textContent = `${operator.surname} ${operator.name}`
+    operatorsContainer.appendChild(li)
+  })
 }
