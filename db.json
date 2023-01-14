@@ -239,6 +239,14 @@
       "team": "Command",
       "branch": "Army",
       "id": 30
+    },
+    {
+      "name": "Emmaculate",
+      "surname": "Njeri",
+      "rank": "Captain",
+      "team": "Charlie",
+      "branch": "CIA",
+      "id": 31
     }
   ]
 }

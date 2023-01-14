@@ -18,6 +18,7 @@ function fetchOperators(){
   .then(data => {
     displayOperator.call(data[0])
     listOperators(data)
+    renderTeamLists.call(data)
   })
 }
 
@@ -123,4 +124,31 @@ function createOperator(e){
 
 function clearForm(){
   document.getElementById("operator-form").reset()
+}
+
+
+function renderTeamLists(){
+  let teamsContainer = document.querySelector(".teams-container")
+  teamsContainer.replaceChildren()
+  
+  const teamNames = new Set(this.map(operator => operator.team))
+  for (let team of teamNames){
+    const headerDiv = document.createElement("div")
+    headerDiv.classList.add("team")
+    headerDiv.innerHTML = `
+    <h1>Team ${team}</h1>
+		<hr />
+    `
+    const ul = document.createElement("ul")
+    ul.classList.add("team-list")
+    headerDiv.appendChild(ul)
+    teamsContainer.appendChild(headerDiv)
+    this.filter(operator => {
+      if(operator.team === team){
+        const li = document.createElement("li")
+        li.innerHTML = `<em>${operator.rank}</em> ${operator.name} ${operator.surname}`
+        ul.appendChild(li)
+      }
+    })
+  }
 }
