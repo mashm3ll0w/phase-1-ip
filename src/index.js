@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   fetchOperators()
+  document.getElementById("delete-btn").addEventListener("click", deleteOperator)
 })
 
 const localDBURL = "http://localhost:3000/operators"
@@ -27,6 +28,7 @@ function displayOperator(){
   document.getElementById("operator-name").textContent = `${this.surname}, ${this.name}`
   document.getElementById("operator-rank").textContent = this.rank
   document.getElementById("operator-team").textContent = this.team
+  document.getElementById("delete-btn").dataset.id = this.id
 }
 
 function listOperators(operators){
@@ -39,4 +41,20 @@ function listOperators(operators){
     li.addEventListener("click", () => fetchOperator(operator.id))
     operatorsContainer.appendChild(li)
   })
+}
+
+function deleteOperator(e){
+  let confirmDelete = confirm("Are you sure?")
+
+  if(confirmDelete){
+    fetch(`${localDBURL}/${e.target.dataset.id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      }
+    })
+    .then(res => res.json())
+    .then(data => data)
+  }
 }
