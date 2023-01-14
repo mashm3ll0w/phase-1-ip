@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   fetchOperators()
   document.getElementById("delete-btn").addEventListener("click", deleteOperator)
+  document.getElementById("rankButton").addEventListener("click", updateRank)
 })
 
 const localDBURL = "http://localhost:3000/operators"
@@ -29,6 +30,8 @@ function displayOperator(){
   document.getElementById("operator-rank").textContent = this.rank
   document.getElementById("operator-team").textContent = this.team
   document.getElementById("delete-btn").dataset.id = this.id
+  document.getElementById("rankButton").dataset.id = this.id
+  document.getElementById("teamButton").dataset.id = this.id
 }
 
 function listOperators(operators){
@@ -57,4 +60,21 @@ function deleteOperator(e){
     .then(res => res.json())
     .then(data => data)
   }
+}
+
+function updateRank(e){
+  fetch(`${localDBURL}/${e.target.dataset.id}`, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      rank: document.getElementById("rankInput").value
+    })
+  })
+  .then(res => res.json())
+  .then(operator => displayOperator.call(operator))
+  
+  document.getElementById("rankInput").value = ""
 }
