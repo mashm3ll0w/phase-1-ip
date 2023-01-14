@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const form = document.getElementById("operator-form")
   form.addEventListener("submit", createOperator)
+
+  document.querySelector('.modal-footer button[type="button"]').addEventListener("click", clearForm)
 })
 
 const localDBURL = "http://localhost:3000/operators"
@@ -116,5 +118,9 @@ function createOperator(e){
       branch: document.querySelector('input[name="branchOption"]:checked').value
     })
   })
+  clearForm()
+}
+
+function clearForm(){
   document.getElementById("operator-form").reset()
 }
