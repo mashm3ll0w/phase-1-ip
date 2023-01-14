@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("delete-btn").addEventListener("click", deleteOperator)
   document.getElementById("rankButton").addEventListener("click", updateRank)
   document.getElementById("teamButton").addEventListener("click", updateTeam)
+  
+  const form = document.getElementById("operator-form")
+  form.addEventListener("submit", createOperator)
 })
 
 const localDBURL = "http://localhost:3000/operators"
@@ -95,4 +98,23 @@ function updateTeam(e){
   .then(operator => displayOperator.call(operator))
   
   document.getElementById("teamInput").value = ""
+}
+
+function createOperator(e){
+  e.preventDefault()
+  fetch(localDBURL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      name: document.getElementById("firstName").value,
+      surname: document.getElementById("surname").value,
+      rank: document.getElementById("newRank").value,
+      team: document.getElementById("newTeam").value,
+      branch: document.querySelector('input[name="branchOption"]:checked').value
+    })
+  })
+  document.getElementById("operator-form").reset()
 }

@@ -231,6 +231,14 @@
       "rank": "Sergeant",
       "team": "Echo",
       "branch": "Army"
+    },
+    {
+      "name": "Charles",
+      "surname": "Swaleh",
+      "rank": "Captain",
+      "team": "Command",
+      "branch": "Army",
+      "id": 30
     }
   ]
 }
