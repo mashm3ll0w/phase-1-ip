@@ -20,6 +20,9 @@ The following technologies were used;
 ### Live Link
 The project is live at https://mashm3ll0w.github.io/phase-1-ip/
 
+
+The online DB is hosted on [My JSON Server](https://my-json-server.typicode.com/) and can be accessed at https://my-json-server.typicode.com/mashm3ll0w/phase-1-ip
+
 ## Setup
 To run the project locally;
 
