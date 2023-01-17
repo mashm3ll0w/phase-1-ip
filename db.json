@@ -199,54 +199,6 @@
       "rank": "Sergeant",
       "team": "Whisky",
       "branch": "Navy"
-    },
-    {
-      "id": 26,
-      "name": "John",
-      "surname": "Kozak",
-      "rank": "Sergeant",
-      "team": "Echo",
-      "branch": "Army"
-    },
-    {
-      "id": 27,
-      "name": "Cedric",
-      "surname": "Ferguson",
-      "rank": "Captain",
-      "team": "Echo",
-      "branch": "Army"
-    },
-    {
-      "id": 28,
-      "name": "Robert",
-      "surname": "Bonifacio",
-      "rank": "Sergeant",
-      "team": "Echo",
-      "branch": "Army"
-    },
-    {
-      "id": 29,
-      "name": "James Grant",
-      "surname": "Ellison",
-      "rank": "Sergeant",
-      "team": "Echo",
-      "branch": "Army"
-    },
-    {
-      "name": "Charles",
-      "surname": "Swaleh",
-      "rank": "Captain",
-      "team": "Command",
-      "branch": "Army",
-      "id": 30
-    },
-    {
-      "name": "Emmaculate",
-      "surname": "Njeri",
-      "rank": "Captain",
-      "team": "Charlie",
-      "branch": "CIA",
-      "id": 31
     }
   ]
 }
