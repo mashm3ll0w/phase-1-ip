@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('.modal-footer button[type="button"]').addEventListener("click", clearForm)
 })
 
-const localDBURL = "http://localhost:3000/operators"
-
+const localDBUrl = "http://localhost:3000/operators"
+const onlineDBUrl = "https://my-json-server.typicode.com/mashm3ll0w/phase-1-ip/operators"
 function fetchOperators(){
-  fetch(`${localDBURL}`)
+  fetch(`${onlineDBUrl}`)
   .then(res => res.json())
   .then(data => {
     displayOperator.call(data[0])
@@ -23,7 +23,7 @@ function fetchOperators(){
 }
 
 function fetchOperator(id){
-  fetch(`${localDBURL}/${id}`)
+  fetch(`${onlineDBUrl}/${id}`)
   .then(res => res.json())
   .then(operator => {
     displayOperator.call(operator)
@@ -57,7 +57,7 @@ function deleteOperator(e){
   let confirmDelete = confirm("Are you sure?")
 
   if(confirmDelete){
-    fetch(`${localDBURL}/${e.target.dataset.id}`, {
+    fetch(`${onlineDBUrl}/${e.target.dataset.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ function deleteOperator(e){
 }
 
 function updateRank(e){
-  fetch(`${localDBURL}/${e.target.dataset.id}`, {
+  fetch(`${onlineDBUrl}/${e.target.dataset.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -87,7 +87,7 @@ function updateRank(e){
 }
 
 function updateTeam(e){
-  fetch(`${localDBURL}/${e.target.dataset.id}`, {
+  fetch(`${onlineDBUrl}/${e.target.dataset.id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -105,7 +105,7 @@ function updateTeam(e){
 
 function createOperator(e){
   e.preventDefault()
-  fetch(localDBURL, {
+  fetch(onlineDBUrl, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
