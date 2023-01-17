@@ -20,6 +20,7 @@ function fetchOperators(){
     listOperators(data)
     renderTeamLists.call(data)
   })
+  .catch(error => console.log("Error: ", error.message))
 }
 
 function fetchOperator(id){
@@ -28,6 +29,7 @@ function fetchOperator(id){
   .then(operator => {
     displayOperator.call(operator)
   })
+  .catch(error => console.log("Error: ", error.message))
 }
 
 function displayOperator(){
@@ -66,6 +68,7 @@ function deleteOperator(e){
     })
     .then(res => res.json())
     .then(data => data)
+    .catch(error => console.log("Error: ", error.message))
   }
 }
 
@@ -82,6 +85,7 @@ function updateRank(e){
   })
   .then(res => res.json())
   .then(operator => displayOperator.call(operator))
+  .catch(error => console.log("Error: ", error.message))
   
   document.getElementById("rankInput").value = ""
 }
@@ -99,6 +103,7 @@ function updateTeam(e){
   })
   .then(res => res.json())
   .then(operator => displayOperator.call(operator))
+  .catch(error => console.log("Error: ", error.message))
   
   document.getElementById("teamInput").value = ""
 }
@@ -119,6 +124,9 @@ function createOperator(e){
       branch: document.querySelector('input[name="branchOption"]:checked').value
     })
   })
+  .then(res => res.json())
+  .then(operator => operator)
+  .catch(error => console.log("Error: ", error.message))
   clearForm()
 }
 
