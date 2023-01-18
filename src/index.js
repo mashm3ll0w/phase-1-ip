@@ -67,7 +67,9 @@ function deleteOperator(e){
       }
     })
     .then(res => res.json())
-    .then(data => data)
+    .then(data => {
+      fetchOperator(1)
+    })
     .catch(error => console.log("Error: ", error.message))
   }
 }
@@ -84,7 +86,10 @@ function updateRank(e){
     })
   })
   .then(res => res.json())
-  .then(operator => displayOperator.call(operator))
+  .then(operator => {
+    displayOperator.call(operator)
+    renderTeamLists()
+  })
   .catch(error => console.log("Error: ", error.message))
   
   document.getElementById("rankInput").value = ""
@@ -102,7 +107,10 @@ function updateTeam(e){
     })
   })
   .then(res => res.json())
-  .then(operator => displayOperator.call(operator))
+  .then(operator => {
+    displayOperator.call(operator)
+    renderTeamLists()
+  })
   .catch(error => console.log("Error: ", error.message))
   
   document.getElementById("teamInput").value = ""
@@ -125,7 +133,10 @@ function createOperator(e){
     })
   })
   .then(res => res.json())
-  .then(operator => operator)
+  .then(operator => {
+    displayOperator.call(operator)
+    renderTeamLists()
+  })
   .catch(error => console.log("Error: ", error.message))
   clearForm()
 }
