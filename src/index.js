@@ -87,7 +87,7 @@ function updateRank(e){
   })
   .then(res => res.json())
   .then(operator => {
-    displayOperator.call(operator)
+    document.getElementById("operator-rank").textContent = operator.rank
   })
   .catch(error => console.log("Error: ", error.message))
   
@@ -107,7 +107,7 @@ function updateTeam(e){
   })
   .then(res => res.json())
   .then(operator => {
-    displayOperator.call(operator)
+    document.getElementById("operator-team").textContent = operator.team
   })
   .catch(error => console.log("Error: ", error.message))
   
