@@ -88,7 +88,6 @@ function updateRank(e){
   .then(res => res.json())
   .then(operator => {
     displayOperator.call(operator)
-    renderTeamLists()
   })
   .catch(error => console.log("Error: ", error.message))
   
@@ -109,7 +108,6 @@ function updateTeam(e){
   .then(res => res.json())
   .then(operator => {
     displayOperator.call(operator)
-    renderTeamLists()
   })
   .catch(error => console.log("Error: ", error.message))
   
@@ -135,7 +133,6 @@ function createOperator(e){
   .then(res => res.json())
   .then(operator => {
     displayOperator.call(operator)
-    renderTeamLists()
   })
   .catch(error => console.log("Error: ", error.message))
   clearForm()
